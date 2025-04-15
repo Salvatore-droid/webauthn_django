@@ -28,8 +28,8 @@ DEBUG = True
 ALLOWED_HOSTS = ['*']
 
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:3000",  
-    "http://localhost:5173",
+    "https://webauthn-node-zg2k.onrender.com",  
+    "https://webauthn-frontend.onrender.com/",
     # 'https://figerprint-auther-backend.onrender.com',
     # 'https://fingerprint-auther-frontend.onrender.com'
 ]
