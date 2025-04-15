@@ -29,7 +29,7 @@ ALLOWED_HOSTS = ['*']
 
 CORS_ALLOWED_ORIGINS = [
     "https://webauthn-node-zg2k.onrender.com",  
-    "https://webauthn-frontend.onrender.com/",
+    "https://webauthn-frontend.onrender.com",
     # 'https://figerprint-auther-backend.onrender.com',
     # 'https://fingerprint-auther-frontend.onrender.com'
 ]
@@ -98,7 +98,7 @@ DATABASES = {
         'NAME': 'biometric_7u96',
         'USER': 'webauthn_user',
         'PASSWORD': 'WaafyDTYwwgrIjSsEk6bWLpV35DTehym',
-        'HOST': 'dpg-cvve9824d50c739ag8dg-a.onrender.com',
+        'HOST': 'dpg-cvve9824d50c739ag8dg-a',
         'PORT': '5432',
     }
 }
@@ -140,6 +140,13 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
 STATIC_URL = 'static/'
+
+
+STATICFILES_DIRS = [
+    BASE_DIR / 'staticfiles',
+]
+
+STATIC_ROOT = BASE_DIR / 'static'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
