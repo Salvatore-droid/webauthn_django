@@ -43,6 +43,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'corsheaders',
+    'rest_framework',
+    'rest_framework.authtoken',
     'django.contrib.gis',
     'base'
 ]
@@ -98,8 +101,11 @@ DATABASES = {
         'NAME': 'biometric_7u96',
         'USER': 'webauthn_user',
         'PASSWORD': 'WaafyDTYwwgrIjSsEk6bWLpV35DTehym',
-        'HOST': 'dpg-cvve9824d50c739ag8dg-a',
+        'HOST': 'dpg-cvve9824d50c739ag8dg-a.oregon-postgres.render.com',
         'PORT': '5432',
+        'OPTIONS': {
+            'sslmode': 'require',  # SSL encryption for Render PostgreSQL
+        }
     }
 }
 
@@ -140,7 +146,6 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
 STATIC_URL = 'static/'
-
 
 STATICFILES_DIRS = [
     BASE_DIR / 'staticfiles',
