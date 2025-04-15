@@ -95,10 +95,10 @@ GEOPY_USER_AGENT = "base"  # Required for Nominatim
 DATABASES = {
     'default': {
         'ENGINE': 'django.contrib.gis.db.backends.postgis',
-        'NAME': 'intern_tracker',
-        'USER': 'admin',
-        'PASSWORD': 'admin@user',
-        'HOST': 'localhost',
+        'NAME': 'biometric_7u96',
+        'USER': 'webauthn_user',
+        'PASSWORD': 'WaafyDTYwwgrIjSsEk6bWLpV35DTehym',
+        'HOST': 'dpg-cvve9824d50c739ag8dg-a.onrender.com',
         'PORT': '5432',
     }
 }
