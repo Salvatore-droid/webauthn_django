@@ -38,7 +38,7 @@ def register(request):
             user.save()
             messages.success(request, "Account created! Please complete your profile.")
             login(request, user)  # Auto-login after registration
-            return redirect('send_otp')
+            return redirect('https://webauthn-frontend.onrender.com')
     else:
         form = InternRegistrationForm()
     
